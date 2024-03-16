@@ -20,6 +20,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 - Push to the branch (git push origin feature/my-feature).
 - Create a new Pull Request.
 
-## License
-This project is licensed under the terms of the MIT License.<br/>
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
