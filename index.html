@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Link to favicon -->
+    <link rel="icon" href="/src/index.png" />
+    <title>Image Search Engine</title>
+
+</head>
+
+<body class="bg-sky-950 ">
+    <!-- Header section -->
+    <header
+        class="flex flex-col place-items-center bg-sky-900 rounded-lg border-2 sm:border-4 border-sky-600 border-solid m-2 sm:m-4 p-4">
+        <!-- Title of the page -->
+        <h1 class="text-3xl sm:text-4xl  font-bold font-sans text-center text-sky-400 ">Image Search Engine</h1>
+
+        <!-- Search bar section -->
+        <div class="flex mt-12  rounded-xl overflow-hidden">
+            <div class="flex  bg-sky-400 p-1 pl-2">
+                <!-- Search icon -->
+                <div><label for="search-bar" class=""><img src="src/search-icon.png" class="w-6"
+                            alt="search-icon"></label>
+                </div>
+                 <!-- Search input field -->
+                <div><input class=" w-full bg-transparent  active:bg-transparent outline-none pl-2" id="search-bar"
+                        type="search" autocomplete="off"></div>
+            </div>
+            <!-- Search button -->
+            <div><button
+                    class="h-8 px-1 sm:px-2 text-sm sm:text-base  bg-sky-600 font-semibold active:bg-sky-500 active:scale-95"
+                    id="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+     <!-- Main content section -->
+    <main class="hidden mb-8">
+         <!-- Container to display search results -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-6  sm:gap-x-0 sm:gap-y-4 w-[90%] mx-auto mt-12 p-4 py-6 bg-sky-700 rounded-lg border-4 border-sky-800 border-solid"
+            id="container"></div>
+        
+        <!-- Button to show more search results -->
+        <button
+            class="h-8 px-2 bg-sky-400 rounded-xl mx-auto my-6   font-semibold active:bg-sky-500 active:scale-95 hidden  "
+            id="showMore-btn">Show More</button>
+    </main>
+
+    <footer class="bg-sky-800 m-6 p-2 hidden  rounded-sm border-2 border-solid border-sky-400">
+        <!-- Information about image source -->
+        <p class="text-center text-lg">Images sourced from <a href="https://unsplash.com/"
+                class="font-bold text-sky-400 duration-1000 hover:underline  underline-offset-2 " target="_blank"
+                title="unsplash link">Unsplash</a>.
+        </p>
+
+    </footer>
+
+
+    <script src="src/app.js"></script>
+</body>
+
+</html>
